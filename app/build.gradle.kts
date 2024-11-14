@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mobilki1"
+    namespace = "com.example.a1mobileapp4c"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.mobilki1"
+        applicationId = "com.example.a1mobileapp4c"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -19,10 +19,7 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
@@ -43,6 +40,7 @@ dependencies {
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+    implementation(libs.legacy.support.v4)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
